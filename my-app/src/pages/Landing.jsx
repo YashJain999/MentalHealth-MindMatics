@@ -5,7 +5,7 @@ const Landing = () => {
   return (
     <div style={styles.container}>
       <header style={styles.header}>
-        <h1 style={styles.title}>MindMatrics</h1>
+        <h1 style={styles.title}>Swapnil Changes</h1>
         <p style={styles.subtitle}>Your Comprehensive Mental Health Analysis Platform</p>
       </header>
       
