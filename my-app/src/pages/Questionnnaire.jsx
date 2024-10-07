@@ -3,7 +3,6 @@ import { FaTimesCircle, FaClock, FaCheckCircle, FaFireAlt } from "react-icons/fa
 
 // Array of questions
 const questions = [
-<<<<<<< HEAD
   "I found it hard to wind down",
   "I was aware of dryness of my mouth",
   "I couldn't seem to experience any positive feeling at all",
@@ -140,7 +139,6 @@ const Questionnaire = () => {
 };
 
 export default Questionnaire;
-=======
     "I found it hard to wind down",
     "I was aware of dryness of my mouth",
     "I couldn't seem to experience any positive feeling at all",
@@ -283,4 +281,3 @@ const Questionnaire = () => {
 };
 
 export default Questionnaire;
->>>>>>> origin/karan
