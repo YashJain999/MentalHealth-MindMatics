@@ -1,10 +1,18 @@
 import React from 'react';
+<<<<<<< HEAD
 import { Link } from 'react-scroll'; // Import Link from react-scroll
 import { FaSignInAlt, FaUserPlus } from 'react-icons/fa';
 // import { Link } from 'react-router-dom';
+=======
+import { Link as ScrollLink } from 'react-scroll'; // Alias for Link from react-scroll
+import { Link as RouterLink } from 'react-router-dom'; // Alias for Link from react-router-dom
+import backgroundImage from '../assets/images/bg.jpg'; // Adjust the path based on your folder structure
+
+
+>>>>>>> origin/karan
 const Landing = () => {
   return (
-    <div className="relative min-h-screen bg-cover bg-fixed bg-center" style={{ backgroundImage: "url('https://static.vecteezy.com/system/resources/previews/004/928/056/non_2x/mental-health-awareness-with-meditation-background-free-vector.jpg')" }}>
+    <div className="relative min-h-screen bg-cover bg-fixed bg-center" style={{ backgroundImage: `url(${backgroundImage})` }}>
       {/* Navbar */}
       <nav className="bg-black bg-opacity-50 p-4 z-50">
         {/* Fixed Title */}
@@ -18,7 +26,7 @@ const Landing = () => {
           <ul className="flex space-x-8 text-white">
             {['Services', 'Features', 'Blogs', 'About Us'].map((item) => (
               <li key={item}>
-                <Link
+                <ScrollLink
                   to={item.toLowerCase()} // Match the section id
                   smooth={true} // Smooth scrolling
                   duration={500} // Duration of the scroll
@@ -28,11 +36,12 @@ const Landing = () => {
                   offset={-70} // Adjust based on your navbar height
                 >
                   {item}
-                </Link>
+                </ScrollLink>
               </li>
             ))}
           </ul>
 
+<<<<<<< HEAD
           <div className="flex space-x-4">
             <Link to="/login"> {/* Link for Login */}
               <button className="flex items-center px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">
@@ -47,6 +56,19 @@ const Landing = () => {
                 Sign Up
               </button>
             </Link>
+=======
+          <div className="flex space-x-4 mt-2.5">
+          <RouterLink to="/login">
+              <button className="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">
+                Login
+              </button>
+            </RouterLink>
+            <RouterLink to="/signup">
+            <button className="px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 transition duration-300">
+              Sign Up
+            </button>
+            </RouterLink>
+>>>>>>> origin/karan
           </div>
 
         </div>
