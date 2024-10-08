@@ -51,7 +51,7 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
     # Specifies how long the access token will remain valid.
     # In this case, the access token will expire after 30 minutes.
-    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),  # Access token valid for 30 minutes
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=5),  # Access token valid for 30 minutes
 
     # Specifies how long the refresh token will remain valid.
     # In this case, the refresh token will expire after 1 day.
@@ -117,7 +117,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'MentalHealth',
         'USER': 'postgres',
-        'PASSWORD': 'Puraj01!',
+        'PASSWORD': 'admin',
         'HOST': 'localhost',  # Set to 'localhost' or your database host
         'PORT': '5432',
         }

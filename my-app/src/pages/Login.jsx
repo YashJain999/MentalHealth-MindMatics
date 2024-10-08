@@ -55,7 +55,7 @@ const Login = () => {
     };
 
     try {
-      const response = await api.post('/api/token/', payload);
+      const response = await api.post('/api/user/token/', payload);
       if (response.status === 200) {
         alert("Login successful");
         localStorage.setItem(ACCESS_TOKEN, response.data.access);
